@@ -1,0 +1,216 @@
+body {
+    background-color: #f0f0f0;
+}
+
+
+.navbar {
+  background-color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+
+  padding: 12px 25px;
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.hero-image img{
+    width: 300px;
+    border-radius: 15%;
+}
+
+.hero-text h1{
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.95;
+    color: black;
+}
+
+.hero-text h2{
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@media(max-width: 1000px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-text h1{
+        font-size: 60px;
+    }
+
+    .hero-image img{
+        width: 300px;
+    }
+}
+
+
+h2{
+    color: #0dbb6a;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px;
+    color: #0a0a0a;
+}
+
+.about-me{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 150px;
+  margin-top: 100px;
+  line-height: 1.8;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 50px;
+}
+
+.project-image1 {
+  width: 300px;
+  height: 200px;
+  background-image: url("/assets/netflix\ ss.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.project-image2 {
+  width: 300px;
+  height: 200px;
+  background-image: url("/assets/Screenshot\ \(9\).png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.project-image3 {
+  width: 300px;
+  height: 200px;
+  background-image: url("/assets/to-do\ ss.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.project-image4 {
+  width: 300px;
+  height: 200px;
+  background-image: url("/assets/drumweb\ ss.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.project-info {
+  max-width: 400px;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+
+
+.github-btn {
+    text-align: center;
+    margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.github-btn:hover {
+  background-color: darkgreen;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 5px;
+  margin-top: 150px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+p{
+  color: #333;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 15px;
+}
+
+.footer-links a:hover {
+  color: lightgray;
+}
+
+h1{
+  font-family: sans-serif;
+}
