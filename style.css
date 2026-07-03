@@ -250,21 +250,28 @@ p{
   border-radius: 8px;
 }
 
-
-.github-btn {
-    text-align: center;
+.project-buttons {
+    display: flex;
+    gap: 10px;
     margin-top: 20px;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: green;
-  color: white;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
 }
 
-.github-btn:hover {
-  background-color: darkgreen;
+.project-btn,
+.github-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
 }
+
+.project-btn:hover,
+.github-btn:hover {
+    background: green;
+}
+
 
 .footer {
     background: #022b14;
