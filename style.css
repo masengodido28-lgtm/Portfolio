@@ -4,15 +4,15 @@ body {
 
 
 .navbar {
-  background-color: #0a0a0a;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 60px;
+  padding: 8px 50px;
 }
 
 .logo {
-  width: 80px;
+  width: 60px;
   height: auto;
 }
 
@@ -23,8 +23,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  color: green;
 
   padding: 12px 25px;
   border-radius: 8px;
@@ -33,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #333;
+  background-color: rgb(3, 43, 3);
 }
 
 .hero{
@@ -85,7 +85,7 @@ nav a:hover {
 
 
 h2{
-    color: #0dbb6a;
+    color: green;
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin-top: 20px;
@@ -183,7 +183,7 @@ p{
 }
 
 .footer {
-  background-color: black;
+  background-color: rgb(0, 20, 5);
   color: white;
   text-align: center;
   padding: 20px 5px;
