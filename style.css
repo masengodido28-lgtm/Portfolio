@@ -316,3 +316,13 @@ p{
     color: #cfcfcf;
 }
 
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 26px;
+}
