@@ -177,12 +177,14 @@ p{
     font-weight: 600;
 }
 
-.projects-container{
+.projects-container {
     display: flex;
     overflow-x: auto;
     gap: 30px;
     padding: 80px;
     scroll-behavior: smooth;
+
+    align-items: flex-start; /* Add this */
 }
 
 ::-webkit-scrollbar {
