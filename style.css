@@ -237,11 +237,20 @@ p{
   border-radius: 15px;
 }
 
-
 .project-image5 {
   width: 300px;
   height: 200px;
   background-image: url("./assets/youtube\ img.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.project-image6 {
+  width: 300px;
+  height: 200px;
+  background-image: url("./assets/bootstrap\ port.png");
   background-size: cover;
   background-position: center;
   border-radius: 15px;
