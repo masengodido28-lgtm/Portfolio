@@ -201,7 +201,7 @@ p{
 .project-image1 {
   width: 300px;
   height: 200px;
-  background-image: url("/assets/netflix\ ss.png");
+  background-image: url("./assets/netflix\ ss.png");
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -211,7 +211,7 @@ p{
 .project-image2 {
   width: 300px;
   height: 200px;
-  background-image: url("/assets/Screenshot\ \(9\).png");
+  background-image: url("./assets/Screenshot\ \(9\).png");
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -221,7 +221,7 @@ p{
 .project-image3 {
   width: 300px;
   height: 200px;
-  background-image: url("/assets/to-do\ ss.png");
+  background-image: url("./assets/to-do\ ss.png");
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -231,7 +231,7 @@ p{
 .project-image4 {
   width: 300px;
   height: 200px;
-  background-image: url("/assets/drumweb\ ss.png");
+  background-image: url("./assets/drumweb\ ss.png");
   background-size: cover;
   background-position: center;
   border-radius: 15px;
