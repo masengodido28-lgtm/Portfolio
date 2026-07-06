@@ -237,6 +237,16 @@ p{
   border-radius: 15px;
 }
 
+
+.project-image5 {
+  width: 300px;
+  height: 200px;
+  background-image: url("./assets/youtube\ img.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
 .project-info {
   max-width: 400px;
 }
