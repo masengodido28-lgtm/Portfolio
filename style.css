@@ -290,7 +290,38 @@ p{
 .github-btn:hover {
     background: green;
 }
+.case-study {
+    margin-top: 20px;
+}
 
+.case-study summary {
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+.case-study summary::-webkit-details-marker {
+    display: none;
+}
+
+.case-study summary::after {
+    content: " ▼";
+}
+
+.case-study[open] summary::after {
+    content: " ▲";
+}
+
+.case-study p {
+    margin-top: 15px;
+    line-height: 1.7;
+    text-align: left;
+}
 
 .footer {
     background: #022b14;
