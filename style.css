@@ -181,7 +181,7 @@ p{
     display: flex;
     overflow-x: auto;
     gap: 30px;
-    padding: 20px;
+    padding: 80px;
     scroll-behavior: smooth;
 }
 
@@ -321,6 +321,55 @@ p{
     margin-top: 15px;
     line-height: 1.7;
     text-align: left;
+}
+
+
+#contact {
+  padding: 3rem 2rem;
+}
+
+.contact-form {
+  background: #dff0db;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 480px;
+  margin: auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background: #0d0d0e;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
 }
 
 .footer {
