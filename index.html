@@ -3,78 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dido's Portfolio</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/png" href="./assets/favicon logo.png">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./assets/favicon logo.png">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
- 
 <header class="navbar">
 
-  <img src="./assets/my logo.png" alt="logo" class="logo">
+    <img src="./assets/my logo.png" alt="Dido logo" class="logo">
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 </header>
 
 
-  <section class="hero">
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <!-- Background decoration -->
+    <div class="hero-grid"></div>
+
+    <!-- Image -->
     <div class="hero-image">
-      <img src="./assets/home.jpg" alt="Dido">
+        <div class="image-glow"></div>
+        <img src="./assets/home.jpg" alt="Dido Masengo">
     </div>
 
+    <!-- Text -->
     <div class="hero-text">
-      <h1>DIDO<br>MASENGO</h1>
-      <h2>FULL STACK WEB<br>DEVELOPER</h2>
 
-  </section>
+        <p class="hero-small-text">DEVELOPER</p>
+
+        <h1>
+            DIDO<br>
+            <span>MASENGO</span>
+        </h1>
+
+        <h2>
+            FULL STACK WEB<br>
+            DEVELOPER
+        </h2>
+
+        <p class="hero-description">
+            I create clean, purposeful digital experiences
+            through code, creativity and problem solving.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="projects.html" class="hero-btn">
+                View My Work
+            </a>
+
+            <a href="contact.html" class="hero-link">
+                Let's Connect<span>↗</span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
 
 <footer class="footer">
+
     <div class="footer-container">
 
         <!-- Quick Links -->
         <div class="footer-section">
+
             <h4>Quick Links</h4>
+
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
+
         </div>
 
 
-        
         <!-- Copyright -->
         <div class="footer-section center">
-            <p>&copy; 2026 Dido Masengo. All Rights Reserved.</p>
+
+            <p>
+                &copy; 2026 Dido Masengo. All Rights Reserved.
+            </p>
+
         </div>
+
 
         <!-- Social Links -->
         <div class="footer-section">
-    <h3>Connect</h3>
 
-    <div class="social-icons">
-        <a href="https://github.com/masengodido28-lgtm" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
+            <h3>Connect</h3>
 
-        <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
+            <div class="social-icons">
 
-        <a href="mailto:masengodido28@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
+                <a href="https://github.com/masengodido28-lgtm"
+                   target="_blank"
+                   aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b"
+                   target="_blank"
+                   aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:masengodido28@gmail.com"
+                   aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-</div>
 
-    </div>
 </footer>
 
 </body>
