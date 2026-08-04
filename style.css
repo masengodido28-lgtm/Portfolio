@@ -551,7 +551,9 @@ nav a:hover::after {
 .project-image3,
 .project-image4,
 .project-image5,
-.project-image6 {
+.project-image6,
+.project-image7
+ {
 
     width: 100%;
 
@@ -590,6 +592,9 @@ nav a:hover::after {
     background-image: url("./assets/bootstrap\ port.png");
 }
 
+.project-image7 {
+    background-image: url(./assets/ihub\ prototype.png);
+}
 
 .project-info {
     flex: 1;
