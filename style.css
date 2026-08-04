@@ -520,7 +520,7 @@ nav a:hover::after {
 
     scroll-behavior: smooth;
 
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 ::-webkit-scrollbar {
@@ -529,6 +529,10 @@ nav a:hover::after {
 
 .project-card {
     flex: 0 0 340px;
+
+    display: flex;
+
+    flex-direction: column;
 
     background: white;
 
@@ -549,9 +553,11 @@ nav a:hover::after {
 .project-image5,
 .project-image6 {
 
-    width: 300px;
+    width: 100%;
 
     height: 200px;
+
+    flex-shrink: 0;
 
     background-size: cover;
 
@@ -573,7 +579,7 @@ nav a:hover::after {
 }
 
 .project-image4 {
-    background-image: url("./assets/drumweb\ ss.png");
+    background-image: url("./assets/Screenshot\ \(62\).png");
 }
 
 .project-image5 {
@@ -586,21 +592,31 @@ nav a:hover::after {
 
 
 .project-info {
-    max-width: 400px;
-}
+    flex: 1;
 
-.project-btn {
-    display: inline-block;
+    display: flex;
+
+    flex-direction: column;
 
     margin-top: 15px;
+}
 
-    padding: 10px 20px;
+.project-description {
+    flex: 1;
 
-    background-color: black;
+    margin-top: 10px;
 
-    color: white;
+    line-height: 1.6;
+}
 
-    border-radius: 8px;
+.project-links {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-top: 15px;
 }
 
 .project-buttons {
@@ -638,16 +654,18 @@ nav a:hover::after {
    CASE STUDY
 ========================================= */
 
-.case-study {
-    margin-top: 20px;
-}
+.case-study-btn {
+    width: 100%;
 
-.case-study summary {
+    margin-top: 20px;
+
+    padding: 10px;
+
     background: green;
 
     color: white;
 
-    padding: 10px;
+    border: none;
 
     border-radius: 8px;
 
@@ -655,24 +673,82 @@ nav a:hover::after {
 
     font-weight: bold;
 
-    text-align: center;
+    font-size: 1rem;
 
-    list-style: none;
+    transition: 0.3s;
 }
 
-.case-study summary::-webkit-details-marker {
+.case-study-btn:hover {
+    background: #005a14;
+}
+
+.case-study-modal {
     display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
 }
 
-.case-study summary::after {
-    content: " ▼";
+.case-study-modal.open {
+    display: flex;
 }
 
-.case-study[open] summary::after {
-    content: " ▲";
+.modal-content {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.case-study p {
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    background: none;
+
+    border: none;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: #333;
+}
+
+.modal-close:hover {
+    color: green;
+}
+
+.modal-body p {
     margin-top: 15px;
 
     line-height: 1.7;
