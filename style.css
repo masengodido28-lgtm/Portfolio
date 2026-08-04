@@ -463,7 +463,7 @@ nav a:hover::after {
 .skills h2 {
     color: green;
 
-    margin-bottom: 50px;
+     margin-bottom: 35px;
 }
 
 .skills-container {
@@ -502,6 +502,37 @@ nav a:hover::after {
     margin-top: 15px;
 
     font-weight: 600;
+}
+
+.skills-heading{
+     margin: 25px 0;
+
+    color:#006b18;
+
+    font-size:1.5rem;
+
+    text-align:center;
+
+    font-family:Georgia, serif;
+}
+
+.learning{
+    border:2px dashed #006b18;
+
+    background:#f8fff8;
+}
+
+.section-divider{
+    width: 120px;
+    height: 2px;
+
+    background: #006b18;
+
+    margin: 60px auto;
+
+    border-radius: 50px;
+
+    opacity: 0.4;
 }
 
 
