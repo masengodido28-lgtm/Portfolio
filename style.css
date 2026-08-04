@@ -756,76 +756,125 @@ nav a:hover::after {
     text-align: left;
 }
 
-
 /* =========================================
    CONTACT
 ========================================= */
 
 #contact {
-    padding: 3rem 2rem;
+    padding: 100px 8%;
 }
 
 .contact-form {
-    background: #dff0db;
-
-    padding: 25px;
-
-    border-radius: 8px;
-
-    max-width: 480px;
-
+    max-width: 700px;
     margin: auto;
 
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form h2 {
-    margin-bottom: 15px;
-
     text-align: center;
+
+    color: #006b18;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 10px;
+
+    font-family: Georgia, serif;
+}
+
+.contact-subtitle {
+    text-align: center;
+
+    color: #666;
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+
+    font-size: 1rem;
 }
 
 .contact-form label {
     display: block;
 
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 
-    font-weight: bold;
+    font-weight: 600;
+
+    color: #222;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
 
-    padding: 10px;
+    padding: 16px;
 
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 
-    border: 1px solid #ccc;
+    border: 2px solid #e5e5e5;
 
-    border-radius: 4px;
+    border-radius: 12px;
+
+    font-size: 1rem;
+
+    font-family: inherit;
+
+    background: #fafafa;
+
+    transition: 0.3s ease;
+}
+
+.contact-form textarea {
+    min-height: 180px;
+
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+
+    border-color: #006b18;
+
+    background: white;
+
+    box-shadow: 0 0 0 5px rgba(0, 107, 24, 0.12);
 }
 
 .contact-form button {
-    background: #0d0d0e;
+    width: 100%;
 
-    color: #fff;
+    padding: 16px;
+
+    background: #006b18;
+
+    color: white;
 
     border: none;
 
-    padding: 12px;
+    border-radius: 12px;
 
-    width: 100%;
+    font-size: 1rem;
 
-    border-radius: 4px;
+    font-weight: bold;
 
     cursor: pointer;
 
-    font-size: 16px;
+    transition: 0.3s ease;
 }
 
 .contact-form button:hover {
-    background: #0056b3;
+    background: #004d12;
+
+    transform: translateY(-3px);
 }
 
 
