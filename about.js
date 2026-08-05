@@ -44,7 +44,7 @@ buttons.forEach(function(button){
 
         else if(identity === "poet"){
 
-            image.src = "./assets/poetry.jpg";
+            image.src = "./assets/poetry.png";
             title.textContent = "The Poet";
             text.textContent = "Poetry gives me a place to slow down, reflect and express emotions. It shapes the creativity I bring into both design and development.";
 
