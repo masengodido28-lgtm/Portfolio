@@ -37,7 +37,7 @@ body {
 }
 
 .logo {
-    width: 60px;
+    width: 80px;
     height: auto;
 }
 
@@ -402,57 +402,263 @@ nav a:hover::after {
     border-color: #006b18;
 }
 
-
 /* =========================================
-   ABOUT
+   ABOUT HERO
 ========================================= */
-.about{
-    width:90%;
-    margin:60px auto 40px;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:50px;
-}
-.about-content {
-    flex: 1;
+.about-hero {
+    width: 90%;
+    max-width: 1250px;
+
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
 }
 
-.about-content h2 {
-    color: green;
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.about-hero-content {
+    padding: 20px 0;
+}
+
+.about-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    color: #006b18;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.about-label::after {
+
+
+    width: 35px;
+    height: 1px;
+
+    background: #006b18;
+
+    margin-left: 12px;
+}
+
+
+.about-hero h1 {
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 0.95;
+
+    margin: 0 0 20px;
+
+    color: #111;
+}
+
+.about-hero h1 span {
+    color: #006b18;
+}
+
+
+.about-hero h3 {
+    color: #006b18;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 2px;
 
     margin-bottom: 30px;
 }
 
-.about-content p {
 
-    font-size: 1.2rem;
+.about-hero-content p {
+    font-size: 1rem;
 
     line-height: 1.8;
 
-    margin-bottom: 25px;
+    color: #444;
+
+    max-width: 650px;
+
+    margin-bottom: 18px;
 }
 
-.about-quote{
-    color:#006b18;
 
-    font-size:1.4rem;
+/* =========================
+   PERSONALITY HIGHLIGHTS
+========================= */
 
-    font-style:italic;
+.personality-highlights {
 
-    line-height:1.6;
+    display: grid;
 
-    margin:20px 0 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin: 35px 0;
+
 }
 
-.about-transition{
-    margin:35px 0 15px;
-    color:#006b18;
 
-    font-weight:600;
+.personality-item {
 
-    font-size:1.05rem;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 15px 10px;
+
+    border-left: 1px solid rgba(0, 107, 24, 0.25);
+
+}
+
+
+.personality-item i {
+
+    color: #006b18;
+
+    font-size: 1.3rem;
+
+}
+
+
+.personality-item strong {
+
+    display: block;
+
+    color: #006b18;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+}
+
+
+.personality-item small {
+
+    display: block;
+
+    color: #666;
+
+    font-size: 0.7rem;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    background: #006b18;
+
+    color:black;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    border: 1px solid #006b18;
+
+    transition: 0.3s;
+}
+
+
+.about-cta:hover {
+
+    background: transparent;
+
+    color: #006b18;
+
+}
+
+
+.about-cta i {
+
+    transition: 0.3s;
+}
+
+
+.about-cta:hover i {
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-hero-image {
+
+    position: relative;
+
+    border-radius: 50px;
+
+    height: 650px;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+
+.about-hero-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: brightness(0.75);
+}
+
+
+/* Green overlay */
+
+.about-hero-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 107, 24, 0.25),
+            transparent 55%
+        );
+
 }
 
 
@@ -646,6 +852,72 @@ nav a:hover::after {
 
     color:#555;
 
+}
+
+/* =========================================
+   ABOUT CTA
+========================================= */
+
+.about-cta {
+    width: 80%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: #f8fff8;
+    border: 1px solid rgba(0, 107, 24, 0.15);
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-cta h2 {
+    color: #006b18;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 25px;
+
+    background: #006b18;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #004d12;
+    transform: translateY(-3px);
+}
+
+.cta-button i {
+    transition: 0.3s;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
 }
 
 /* =========================================
@@ -904,6 +1176,64 @@ nav a:hover::after {
     text-align: left;
 }
 
+.projects-cta {
+    text-align: center;
+    margin: 80px auto 40px;
+    padding: 45px 20px;
+
+    max-width: 750px;
+
+    background: #f8fff8;
+
+    border: 1px solid rgba(0, 107, 24, 0.15);
+
+    border-radius: 20px;
+}
+
+.projects-cta h3 {
+    color: #006b18;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.projects-cta p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 25px;
+
+    background: #006b18;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #004d12;
+    transform: translateY(-3px);
+}
+
+.cta-button i {
+    transition: 0.3s;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
 /* =========================================
    CONTACT
 ========================================= */
@@ -1035,7 +1365,7 @@ nav a:hover::after {
 
     color: #fff;
 
-    padding: 20px 8%;
+    padding: 10px 8%;
 }
 
 .footer-container {
@@ -1078,7 +1408,7 @@ nav a:hover::after {
 }
 
 .center p {
-    margin-top: 10px;
+    margin-top: 100px;
 
     color: #cfcfcf;
 }
