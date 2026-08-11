@@ -53,6 +53,26 @@ const caseStudies = {
       "One of the biggest challenges I faced was learning how to customize Bootstrap components while maintaining a consistent design. I solved this by combining Bootstrap's built-in classes with custom CSS to achieve the desired layout and styling.",
       "Through this project, I gained practical experience using the Bootstrap framework, improved my understanding of responsive layouts, and learned how to develop professional-looking websites more efficiently. It also strengthened my ability to combine frameworks with custom styling to create polished frontend projects."
     ]
+  },
+    ihub: {
+    title: "iHub Africa Website Prototype",
+    content: [
+      "The iHub Africa Website Prototype was developed as our Sprint 5 Capstone Project. The goal was to design and build a responsive website that communicates iHub Africa's mission, programmes, and impact on young people preparing for careers in the digital economy.",
+
+      "As a team, we created a multi-page website consisting of a Home page, About iHub page, Programs page, and Contact page. We focused on making the website easy to navigate while ensuring that the layout worked across mobile, tablet, and desktop screen sizes.",
+
+      "My role in the project was Quality Assurance (QA) Tester. I was responsible for testing different parts of the website and looking for issues such as layout problems, broken links, navigation issues, inconsistent styling, and problems with interactive elements such as the contact form. When I identified issues, I communicated them with the relevant team members so they could be investigated and resolved.",
+
+      "One of the challenges we encountered was maintaining consistency across the different pages while multiple team members were working on the project. We also experienced challenges with responsive layouts and Git merge conflicts. These were addressed through communication, code reviews, testing, and collaborative problem-solving.",
+
+      "The project also gave me practical experience with Git and GitHub collaboration workflows. Our team used feature branches, pull requests, code reviews, descriptive commit messages, and approved merges to manage our work. This helped me understand how development teams can collaborate on the same codebase while reducing the risk of interfering with each other's work.",
+
+      "Through this project, I learned that quality assurance is more than simply checking whether code works. It involves looking at a website from the user's perspective and asking whether the experience is clear, responsive, accessible, and easy to use. I also strengthened my understanding of teamwork, communication, responsive design, JavaScript, Git, and GitHub.",
+
+      "The final result was a responsive multi-page website prototype that successfully communicated the purpose and programmes of iHub Africa. Given more time, we would improve the project by adding backend functionality, database integration, user registration, further accessibility improvements, and more interactive components.",
+
+      "This project helped me understand that successful web development is not only about writing code. It also involves testing, communication, collaboration, attention to detail, and making sure that the final experience works for the people who will use it."
+    ]
   }
 };
 

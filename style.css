@@ -560,56 +560,6 @@ nav a:hover::after {
     line-height: 1.4;
 }
 
-
-/* =========================
-   CTA
-========================= */
-
-.about-cta {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    padding: 12px 22px;
-
-    background: #006b18;
-
-    color:black;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    border: 1px solid #006b18;
-
-    transition: 0.3s;
-}
-
-
-.about-cta:hover {
-
-    background: transparent;
-
-    color: #006b18;
-
-}
-
-
-.about-cta i {
-
-    transition: 0.3s;
-}
-
-
-.about-cta:hover i {
-
-    transform: translateX(5px);
-}
-
-
 /* =========================
    ABOUT IMAGE
 ========================= */
@@ -619,8 +569,6 @@ nav a:hover::after {
     align-items: stretch;
 
 }
-
-
 
 .about-hero-image img {
 
@@ -1198,7 +1146,7 @@ nav a:hover::after {
     margin-bottom: 25px;
 }
 
-.cta-button {
+.projects-cta .cta-button {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1217,17 +1165,9 @@ nav a:hover::after {
     transition: 0.3s;
 }
 
-.cta-button:hover {
+.projects-cta .cta-button:hover {
     background: #004d12;
     transform: translateY(-3px);
-}
-
-.cta-button i {
-    transition: 0.3s;
-}
-
-.cta-button:hover i {
-    transform: translateX(5px);
 }
 
 /* =========================================
@@ -1620,4 +1560,114 @@ nav a:hover::after {
     .social-icons {
         flex-direction: row;
     }
+}
+
+/* =========================================
+   ABOUT CTA
+========================================= */
+.about-cta {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 80px auto;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background: #fefffe;
+
+    color: rgba(10, 236, 29, 0.87);
+
+    border-radius: 20px;
+}
+
+.about-cta h2 {
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   ABOUT PAGE - CONTACT LINK
+========================================= */
+
+.about-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 30px;
+    padding: 11px 20px;
+
+    background: #006b18;
+    color: white !important;
+
+    text-decoration: none !important;
+
+    border-radius: 25px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.about-contact-link:hover {
+    background: #004d11;
+    transform: translateY(-3px);
+}
+
+.about-contact-link i {
+    font-size: 1rem;
+}
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 1rem;
+
+    transition: 0.3s ease;
+}
+
+.cta-button i {
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    transform: translateX(5px);
+    color: white;
+}
+
+.bottom-contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: green;
+    text-decoration: none;
+
+    font-weight: 600;
+
+    background: transparent;
+}
+
+.bottom-contact-button i {
+    transition: transform 0.3s ease;
+}
+
+.bottom-contact-button:hover i {
+    transform: translateX(5px);
 }
