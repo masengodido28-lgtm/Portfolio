@@ -3,101 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact — Dido Masengo</title>
     <link rel="icon" type="image/png" href="./assets/favicon logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="theme-toggle.js" defer></script>
 </head>
 <body>
-          
-<header class="navbar">
 
-  <img src="./assets/my logo.png" alt="logo" class="logo">
-
-  <nav>
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <img src="./assets/my logo.png" alt="Dido logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+            <i class="fas fa-sun icon-sun"></i>
+            <i class="fas fa-moon icon-moon" style="display:none"></i>
+        </button>
+        <a href="contact.html" class="hire-btn">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
-  </nav>
-
-</header>
+    <a href="contact.html" class="hire-btn">Hire Me</a>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun icon-sun"></i>
+        <i class="fas fa-moon icon-moon" style="display:none"></i>
+    </button>
+</nav>
 
 <main>
 
-<section id="contact" class="section">
+    <!-- PAGE HEADER -->
+    <div class="page-header container">
+        <span class="section-label">Get In Touch</span>
+        <h1>Let's Connect</h1>
+        <p>Have a project, idea, or opportunity in mind? I'd love to hear from you.</p>
+    </div>
 
-    <form
-        class="contact-form"
-        action="https://formspree.io/f/xrpzzerq"
-        method="POST">
+    <div class="divider"></div>
 
-        <h2>Let's Connect</h2>
+    <!-- CONTACT LAYOUT -->
+    <section class="contact-section section-pad">
+        <div class="container contact-section__inner">
 
-        <p class="contact-subtitle">
-            Have a project, an opportunity, or just want to say hello? I'd love to hear from you.
-        </p>
+            <!-- Info side -->
+            <div class="contact-info reveal">
+                <h2>What I can help with</h2>
 
-        <label for="email">Your Email</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="john@example.com"
-            required>
+                <div class="contact-info__items">
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <strong>Web Development</strong>
+                            <p>Building fast, responsive websites and web apps from scratch.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon"><i class="fas fa-paint-brush"></i></div>
+                        <div>
+                            <strong>UI / UX Design</strong>
+                            <p>Clean, intuitive interfaces that your users will enjoy.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <strong>Collaboration</strong>
+                            <p>Open to freelance work, internships, and team projects.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <label for="message">Your Message</label>
-        <textarea
-            id="message"
-            name="message"
-            rows="6"
-            placeholder="Write your message here..."
-            required></textarea>
+                <div class="contact-info__direct">
+                    <span class="section-label" style="display:block; margin-bottom:12px;">Direct contact</span>
+                    <a href="mailto:masengodido28@gmail.com" class="contact-info__link">
+                        <i class="fas fa-envelope"></i> masengodido28@gmail.com
+                    </a>
+                    <a href="https://github.com/masengodido28-lgtm" target="_blank" class="contact-info__link">
+                        <i class="fab fa-github"></i> github.com/masengodido28-lgtm
+                    </a>
+                    <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank" class="contact-info__link">
+                        <i class="fab fa-linkedin-in"></i> linkedin.com/in/dido-masengo
+                    </a>
+                </div>
+            </div>
 
-        <button type="submit">Send Message</button>
+            <!-- Form side -->
+            <div class="contact-form-wrap reveal">
+                <form
+                    class="contact-form"
+                    action="https://formspree.io/f/xrpzzerq"
+                    method="POST"
+                    novalidate>
 
-    </form>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="john@example.com"
+                            required
+                            autocomplete="email">
+                    </div>
 
-</section>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            placeholder="Tell me about your project or idea..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary contact-submit">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-container">
-
-        <!-- Quick Links -->
-        <div class="footer-section">
-            <h4>Quick Links</h4>
+    <div class="footer__inner">
+        <div class="footer__brand">
+            <img src="./assets/my logo.png" alt="Dido logo">
+            <p>Building the web, one line at a time.</p>
+        </div>
+        <div class="footer__col">
+            <span class="footer__col-label">Quick Links</span>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </div>
-
-        <!-- Copyright -->
-        <div class="footer-section center">
-            <p>&copy; 2026 Dido Masengo. All Rights Reserved.</p>
+        <div class="footer__col">
+            <span class="footer__col-label">Connect</span>
+            <div class="footer__socials">
+                <a href="https://github.com/masengodido28-lgtm" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:masengodido28@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-
-            <div class="footer-section">
-    <h3>Connect</h3>
-
-    <div class="social-icons">
-        <a href="https://github.com/masengodido28-lgtm" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="mailto:masengodido28@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
     </div>
-
-    </div>
+    <div class="footer__bottom">&copy; 2026 Dido Masengo. All Rights Reserved.</div>
 </footer>
 
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', scrollY > 40));
+const hamburger = document.getElementById('hamburger');
+const drawer    = document.getElementById('nav-drawer');
+hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); drawer.classList.toggle('open'); });
+
+const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 
 </body>
 </html>

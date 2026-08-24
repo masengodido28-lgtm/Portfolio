@@ -1,128 +1,100 @@
-// Case study content for each project
+/* =====================================================
+   PROJECTS.JS — case study modal logic
+===================================================== */
+
 const caseStudies = {
-  netflix: {
-    title: "Netflix Clone",
-    content: [
-      "The goal of this project was to recreate the Netflix landing page using HTML and CSS while improving my frontend development skills.",
-      "During the project, I focused on creating a clean and modern user interface similar to the original Netflix website. The project included a navigation bar, hero section, background images, buttons, and multiple content sections.",
-      "One of the biggest challenges I faced was positioning elements correctly on top of background images and making the layout responsive on different screen sizes. I solved this by using Flexbox, media queries, and better spacing techniques.",
-      "Through this project, I improved my understanding of HTML structure, CSS styling, responsiveness, and layout design. It also helped me become more confident in building real-world frontend projects."
-    ]
-  },
-  todo: {
-    title: "To-do App",
-    content: [
-      "The goal of this project was to build a functional to-do app using HTML, CSS, and JavaScript.",
-      "Users can add tasks, mark them as complete, and remove items from their list. I focused on keeping the interface simple and easy to use.",
-      "The main challenge was managing the task list in JavaScript and updating the DOM whenever the user made a change.",
-      "This project helped me practice DOM manipulation, event handling, and building interactive features on the frontend."
-    ]
-  },
-  search: {
-    title: "Live Search Bar",
-    content: [
-      "This project was built with The Dev Club using HTML, CSS, and JavaScript.",
-      "It features a live search bar that filters results as the user types, giving instant feedback without reloading the page.",
-      "I learned how to listen for keyboard input and update the displayed results in real time.",
-      "This project strengthened my understanding of JavaScript events and dynamic content updates."
-    ]
-  },
-  drum: {
-    title: "Drum Web",
-    content: [
-      "Drum Web is a personal project aimed at building a community of drummers of any skill level who want to learn how to play drums.",
-      "The site includes sections for learning resources, community features, and project information.",
-      "I focused on creating a welcoming layout that works well on different screen sizes.",
-      "This project helped me practice structuring content for a real audience and building a multi-section website."
-    ]
-  },
-  youtube: {
-    title: "YouTube Clone",
-    content: [
-      "The goal of this project was to recreate the YouTube homepage using HTML and CSS while strengthening my frontend development and layout design skills.",
-      "During the project, I focused on building a clean and responsive user interface similar to the original YouTube website. The project included a navigation bar, sidebar, search bar, video thumbnails, channel information, and a structured content layout.",
-      "One of the biggest challenges I faced was organizing the video grid and ensuring that the layout remained responsive across different screen sizes. I solved this by using CSS Flexbox, Grid, and spacing techniques to create a consistent and user-friendly design.",
-      "Through this project, I improved my understanding of HTML structure, CSS styling, responsive design, and modern webpage layouts. It also gave me more confidence in recreating real-world websites and building visually appealing frontend projects."
-    ]
-  },
-  bootstrap: {
-    title: "Bootstrap Portfolio",
-    content: [
-      "The goal of this project was to build a responsive website using Bootstrap while improving my understanding of frontend frameworks and responsive web design.",
-      "During the project, I focused on creating a clean and modern user interface using Bootstrap's grid system, pre-built components, and utility classes. The project included a responsive navigation bar, cards, buttons, and well-structured content sections that adapted to different screen sizes.",
-      "One of the biggest challenges I faced was learning how to customize Bootstrap components while maintaining a consistent design. I solved this by combining Bootstrap's built-in classes with custom CSS to achieve the desired layout and styling.",
-      "Through this project, I gained practical experience using the Bootstrap framework, improved my understanding of responsive layouts, and learned how to develop professional-looking websites more efficiently. It also strengthened my ability to combine frameworks with custom styling to create polished frontend projects."
-    ]
-  },
+    netflix: {
+        title: "Netflix Clone",
+        content: [
+            "The goal of this project was to recreate the Netflix landing page using HTML and CSS while improving my frontend development skills.",
+            "I focused on creating a clean and modern UI similar to the original Netflix website — navigation bar, hero section, background images, buttons, and multiple content sections.",
+            "One of the biggest challenges was positioning elements correctly on top of background images and making the layout responsive. I solved this using Flexbox, media queries, and careful spacing.",
+            "Through this project I improved my understanding of HTML structure, CSS styling, responsiveness, and layout design."
+        ]
+    },
+    todo: {
+        title: "To-Do App",
+        content: [
+            "The goal was to build a functional to-do app using HTML, CSS, and JavaScript.",
+            "Users can add tasks, mark them as complete, and remove items. I kept the interface simple and intuitive.",
+            "The main challenge was managing the task list in JavaScript and updating the DOM whenever the user made a change.",
+            "This project helped me practise DOM manipulation, event handling, and building interactive frontend features."
+        ]
+    },
+    search: {
+        title: "Live Search Bar",
+        content: [
+            "Built with The Dev Club using HTML, CSS, and JavaScript.",
+            "It features a live search bar that filters results as the user types — instant feedback with no page reload.",
+            "I learned how to listen for keyboard input and update displayed results in real time.",
+            "This project strengthened my understanding of JavaScript events and dynamic content updates."
+        ]
+    },
+    drum: {
+        title: "Drum Web",
+        content: [
+            "Drum Web is a personal project aimed at building a community for drummers of any skill level.",
+            "The site includes sections for learning resources, community features, and project information.",
+            "I focused on a welcoming layout that works across different screen sizes.",
+            "This project helped me practise structuring content for a real audience and building multi-section websites."
+        ]
+    },
+    youtube: {
+        title: "YouTube Clone",
+        content: [
+            "The goal was to recreate the YouTube homepage using HTML and CSS while strengthening layout design skills.",
+            "I built a responsive UI including a navigation bar, sidebar, search bar, video thumbnails, channel info, and structured content.",
+            "The biggest challenge was organising the video grid responsively. I solved this with CSS Flexbox, Grid, and spacing techniques.",
+            "This project improved my confidence in recreating real-world websites and building visually polished frontend projects."
+        ]
+    },
+    bootstrap: {
+        title: "Bootstrap Portfolio",
+        content: [
+            "The goal was to build a responsive website using Bootstrap while improving my understanding of frontend frameworks.",
+            "I used Bootstrap's grid system, pre-built components, and utility classes alongside custom CSS for a polished look.",
+            "The main challenge was customising Bootstrap components while keeping a consistent design.",
+            "I gained practical experience with Bootstrap, responsive layouts, and combining frameworks with custom styling."
+        ]
+    },
     ihub: {
-    title: "iHub Africa Website Prototype",
-    content: [
-      "The iHub Africa Website Prototype was developed as our Sprint 5 Capstone Project. The goal was to design and build a responsive website that communicates iHub Africa's mission, programmes, and impact on young people preparing for careers in the digital economy.",
-
-      "As a team, we created a multi-page website consisting of a Home page, About iHub page, Programs page, and Contact page. We focused on making the website easy to navigate while ensuring that the layout worked across mobile, tablet, and desktop screen sizes.",
-
-      "My role in the project was Quality Assurance (QA) Tester. I was responsible for testing different parts of the website and looking for issues such as layout problems, broken links, navigation issues, inconsistent styling, and problems with interactive elements such as the contact form. When I identified issues, I communicated them with the relevant team members so they could be investigated and resolved.",
-
-      "One of the challenges we encountered was maintaining consistency across the different pages while multiple team members were working on the project. We also experienced challenges with responsive layouts and Git merge conflicts. These were addressed through communication, code reviews, testing, and collaborative problem-solving.",
-
-      "The project also gave me practical experience with Git and GitHub collaboration workflows. Our team used feature branches, pull requests, code reviews, descriptive commit messages, and approved merges to manage our work. This helped me understand how development teams can collaborate on the same codebase while reducing the risk of interfering with each other's work.",
-
-      "Through this project, I learned that quality assurance is more than simply checking whether code works. It involves looking at a website from the user's perspective and asking whether the experience is clear, responsive, accessible, and easy to use. I also strengthened my understanding of teamwork, communication, responsive design, JavaScript, Git, and GitHub.",
-
-      "The final result was a responsive multi-page website prototype that successfully communicated the purpose and programmes of iHub Africa. Given more time, we would improve the project by adding backend functionality, database integration, user registration, further accessibility improvements, and more interactive components.",
-
-      "This project helped me understand that successful web development is not only about writing code. It also involves testing, communication, collaboration, attention to detail, and making sure that the final experience works for the people who will use it."
-    ]
-  }
+        title: "iHub Africa Website Prototype",
+        content: [
+            "The iHub Africa Website Prototype was our Sprint 5 Capstone Project — a responsive site communicating iHub Africa's mission, programmes, and impact.",
+            "As a team we built Home, About, Programs, and Contact pages, focusing on accessibility and mobile responsiveness.",
+            "My role was QA Tester: I identified layout issues, broken links, navigation problems, inconsistent styling, and form bugs, then communicated findings to the team.",
+            "We used Git feature branches, pull requests, code reviews, and descriptive commit messages to collaborate effectively.",
+            "The experience taught me that quality assurance is about viewing a product from the user's perspective — not just checking if code runs.",
+            "Given more time we would add backend functionality, database integration, user registration, and further accessibility improvements."
+        ]
+    }
 };
 
-// Get modal elements from the page
-const modal = document.getElementById("case-study-modal");
-const modalTitle = document.getElementById("modal-title");
-const modalBody = document.getElementById("modal-body");
-const closeBtn = document.getElementById("modal-close");
+const modal      = document.getElementById('case-study-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalBody  = document.getElementById('modal-body');
+const closeBtn   = document.getElementById('modal-close');
 
-// Show the modal with the chosen project's case study
-function openModal(projectKey) {
-  const study = caseStudies[projectKey];
-  if (!study) return;
-  
-
-  modalTitle.textContent = study.title;
-  modalBody.innerHTML = study.content.map(function (paragraph) {
-    return "<p>" + paragraph + "</p>";
-  }).join("");
-
-  modal.classList.add("open");
-  document.body.style.overflow = "hidden";
+function openModal(key) {
+    const study = caseStudies[key];
+    if (!study) return;
+    modalTitle.textContent = study.title;
+    modalBody.innerHTML = study.content.map(p => `<p>${p}</p>`).join('');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
 }
 
-// Hide the modal
 function closeModal() {
-  modal.classList.remove("open");
-  document.body.style.overflow = "";
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
 }
 
-// Open modal when a case study button is clicked
-document.querySelectorAll(".case-study-btn").forEach(function (button) {
-  button.addEventListener("click", function () {
-    openModal(button.dataset.project);
-  });
+document.querySelectorAll('.case-study-btn').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.project));
 });
 
-// Close modal with the X button
-closeBtn.addEventListener("click", closeModal);
+closeBtn.addEventListener('click', closeModal);
 
-// Close modal when clicking the dark background
-modal.addEventListener("click", function (event) {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 
-// Close modal with the Escape key
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    closeModal();
-  }
-});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });

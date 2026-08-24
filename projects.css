@@ -1,0 +1,164 @@
+/* =====================================================
+   PROJECTS.CSS — projects.html only
+===================================================== */
+
+/* ---- Grid ---- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* ---- Card ---- */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+/* Thumbnail */
+.project-card__thumb {
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-card__thumb {
+    transform: scale(1.04);
+}
+
+.project-card__thumb--1 { background-image: url("./assets/netflix ss.png"); }
+.project-card__thumb--2 { background-image: url("./assets/Screenshot (9).png"); }
+.project-card__thumb--3 { background-image: url("./assets/to-do ss.png"); }
+.project-card__thumb--4 { background-image: url("./assets/Screenshot (62).png"); }
+.project-card__thumb--5 { background-image: url("./assets/youtube img.png"); }
+.project-card__thumb--6 { background-image: url("./assets/bootstrap port.png"); }
+.project-card__thumb--7 { background-image: url("./assets/ihub prototype.png"); }
+
+/* Body */
+.project-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px 20px 20px;
+}
+
+.project-card__body h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.project-card__body p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+/* Tech tags */
+.project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.project-card__tags span {
+    padding: 3px 10px;
+    background: var(--accent-dim);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.3px;
+}
+
+/* Actions */
+.project-card__actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-sm {
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    gap: 6px !important;
+}
+
+/* ---- Case study modal ---- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.open { display: flex; }
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    max-height: 82vh;
+    overflow-y: auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px 32px;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal__close {
+    position: absolute;
+    top: 16px; right: 18px;
+    background: none;
+    border: none;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color var(--transition);
+}
+
+.modal__close:hover { color: var(--accent); }
+
+.modal__content h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 18px;
+}
+
+.modal__body p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-top: 14px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1000px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .modal__content { padding: 24px 18px; }
+}

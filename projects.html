@@ -3,187 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Projects — Dido Masengo</title>
     <link rel="icon" type="image/png" href="./assets/favicon logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="theme-toggle.js" defer></script>
 </head>
 <body>
-         
-<header class="navbar">
 
-  <img src="./assets/my logo.png" alt="logo" class="logo">
-
-  <nav>
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <img src="./assets/my logo.png" alt="Dido logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+            <i class="fas fa-sun icon-sun"></i>
+            <i class="fas fa-moon icon-moon" style="display:none"></i>
+        </button>
+        <a href="contact.html" class="hire-btn">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
-  </nav>
-
-</header>
+    <a href="contact.html" class="hire-btn">Hire Me</a>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun icon-sun"></i>
+        <i class="fas fa-moon icon-moon" style="display:none"></i>
+    </button>
+</nav>
 
 <main>
 
-  <div class="projects-container">
-
-    <div class="project-card">
-      <div class="project-image1"></div>
-      <div class="project-info">
-        <h2>Netflix Clone</h2>
-        <p class="project-description">A responsive recreation of the Netflix landing experience, designed to practice building visually engaging layouts, structured content sections, and interfaces inspired by real-world products.</p>
-        <div class="project-links">
-          <a href="https://neftlix-clon.netlify.app/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/masengodido28-lgtm/fake-netflix" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="netflix">View Case Study</button>
+    <!-- PAGE HEADER -->
+    <div class="page-header container">
+        <span class="section-label">Portfolio</span>
+        <h1>My Projects</h1>
+        <p>A selection of things I've built — from clones to real-world products.</p>
     </div>
 
-    <div class="project-card">
-      <div class="project-image2"></div>
-      <div class="project-info">
-        <h2>To-do app</h2>
-        <p class="project-description">A simple task management application that allows users to create, complete, and remove tasks. Built to explore how interactive interfaces respond to user actions and manage changing data.Built using Html, CSS & JavaScript</p>
-        <div class="project-links">
-          <a href="https://masengodido28-lgtm.github.io/TO-DO-APP/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/masengodido28-lgtm/TO-DO-APP" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="todo">View Case Study</button>
-    </div>
+    <div class="divider"></div>
 
-    <div class="project-card">
-      <div class="project-image3"></div>
-      <div class="project-info">
-        <h2>Live search bar</h2>
-        <p class="project-description">An interactive search experience that filters results instantly as users type, demonstrating how real-time feedback can make interfaces faster and more intuitive. Built by "The dev club" using Html, CSS & JavaScript features.</p>
-        <div class="project-links">
-          <a href="https://masengodido28-lgtm.github.io/Devclub-live-search-bar102/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/masengodido28-lgtm/Devclub-live-search-bar102" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="search">View Case Study</button>
-    </div>
+    <!-- PROJECTS GRID -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="projects-grid">
 
-    <div class="project-card">
-      <div class="project-image4"></div>
-      <div class="project-info">
-        <h2>Drum web</h2>
-        <p class="project-description">A personal project that is aimed at building a community of drummers of any skill level who want to learn how to play drums.</p>
-        <div class="project-links">
-          <a href="https://masengodido28-lgtm.github.io/Drum-Web2/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/masengodido28-lgtm/Drum-Web2" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="drum">View Case Study</button>
-    </div>
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--1"></div>
+                    <div class="project-card__body">
+                        <h2>Netflix Clone</h2>
+                        <p>A responsive recreation of the Netflix landing experience, practising visually engaging layouts and structured content sections.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://neftlix-clon.netlify.app/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/masengodido28-lgtm/fake-netflix" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="netflix">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
 
-    <div class="project-card">
-      <div class="project-image5"></div>
-      <div class="project-info">
-        <h2>YouTube Clone</h2>
-        <p class="project-description">A responsive recreation of a video-sharing interface, featuring structured video content, search, navigation, thumbnails, and channel information to explore how complex content-heavy layouts can be organised.Built using html & CSS.</p>
-        <div class="project-links">
-          <a href="https://masengodido28-lgtm.github.io/Youtube-clone1/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/masengodido28-lgtm/Youtube-clone1" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="youtube">View Case Study</button>
-    </div>
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--2"></div>
+                    <div class="project-card__body">
+                        <h2>To-Do App</h2>
+                        <p>A task management app where users can create, complete, and remove tasks. Focuses on interactive DOM manipulation.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://masengodido28-lgtm.github.io/TO-DO-APP/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/masengodido28-lgtm/TO-DO-APP" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="todo">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
 
-    <div class="project-card">
-      <div class="project-image6"></div>
-      <div class="project-info">
-        <h2>Bootstrap Portfolio</h2>
-        <p class="project-description">A personal portfolio designed to present my projects, skills, and development journey through a responsive and structured interface, while exploring how Bootstrap can speed up the process of creating consistent layouts. Built using html, CSS & Bootstrap.</p>
-        <div class="project-links">
-          <a href="https://masengodido28-lgtm.github.io/ZAIO-Portfolio/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/masengodido28-lgtm/ZAIO-Portfolio" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="bootstrap">View Case Study</button>
-    </div>
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--3"></div>
+                    <div class="project-card__body">
+                        <h2>Live Search Bar</h2>
+                        <p>Filters results instantly as users type, demonstrating real-time feedback and dynamic content updates.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://masengodido28-lgtm.github.io/Devclub-live-search-bar102/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/masengodido28-lgtm/Devclub-live-search-bar102" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="search">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
 
-    <div class="project-card">
-      <div class="project-image7"></div>
-      <div class="project-info">
-        <h2>iHub website prototype</h2>
-        <p class="project-description">A responsive website prototype created to communicate iHub Africa's mission, programmes, and impact while giving visitors a clear and accessible way to explore opportunities within the organisation. Built by me and my group (The Testers) using html, CSS & JavaScript.</p>
-        <div class="project-links">
-          <a href="https://client-website-prototype-i-hub.vercel.app/" class="project-btn">Demo Link</a>
-          <a href="https://github.com/KMukendi10/Client-Website-Prototype-iHub.git" class="github-btn" target="_blank">Repo link</a>
-        </div>
-      </div>
-      <button class="case-study-btn" data-project="ihub">View Case Study</button>
-    </div>
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--4"></div>
+                    <div class="project-card__body">
+                        <h2>Drum Web</h2>
+                        <p>A personal project building a community for drummers of any skill level to find helpful resources and content.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://masengodido28-lgtm.github.io/Drum-Web2/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/masengodido28-lgtm/Drum-Web2" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="drum">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
 
-  </div>
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--5"></div>
+                    <div class="project-card__body">
+                        <h2>YouTube Clone</h2>
+                        <p>A responsive video-sharing interface with thumbnails, channel info, and search — exploring complex content-heavy layouts.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://masengodido28-lgtm.github.io/Youtube-clone1/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/masengodido28-lgtm/Youtube-clone1" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="youtube">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--6"></div>
+                    <div class="project-card__body">
+                        <h2>Bootstrap Portfolio</h2>
+                        <p>A personal portfolio exploring how Bootstrap speeds up consistent, responsive layouts combined with custom CSS.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://masengodido28-lgtm.github.io/ZAIO-Portfolio/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/masengodido28-lgtm/ZAIO-Portfolio" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="bootstrap">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card reveal">
+                    <div class="project-card__thumb project-card__thumb--7"></div>
+                    <div class="project-card__body">
+                        <h2>iHub Website Prototype</h2>
+                        <p>A responsive multi-page prototype for iHub Africa built as a team Capstone project, with QA testing and Git collaboration.</p>
+                        <div class="project-card__tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Team</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a href="https://client-website-prototype-i-hub.vercel.app/" target="_blank" class="btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/KMukendi10/Client-Website-Prototype-iHub.git" target="_blank" class="btn-ghost btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn-ghost btn-sm case-study-btn" data-project="ihub">
+                                Case Study
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
 
 </main>
 
 <!-- Case study modal -->
-<div id="case-study-modal" class="case-study-modal">
-  <div class="modal-content">
-    <button id="modal-close" class="modal-close" aria-label="Close case study">&times;</button>
-    <h2 id="modal-title"></h2>
-    <div id="modal-body" class="modal-body"></div>
-  </div>
+<div id="case-study-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__content">
+        <button id="modal-close" class="modal__close" aria-label="Close">&times;</button>
+        <h2 id="modal-title"></h2>
+        <div id="modal-body" class="modal__body"></div>
+    </div>
 </div>
 
-<div class="projects-cta">
-
-    <h3>Have a project in mind?</h3>
-
-    <p>
-        I'm always open to new ideas, collaborations and opportunities to build something meaningful.
-    </p>
-
-    <a href="contact.html" class="cta-button">
-        Let's Work Together
-        <i class="bi bi-arrow-right"></i>
-    </a>
-
+<!-- CTA -->
+<div class="cta-banner reveal">
+    <div class="cta-banner__orb"></div>
+    <div class="cta-banner__inner">
+        <h2>Have a project in mind?</h2>
+        <p>I'm always open to new ideas, collaborations and opportunities to build something meaningful.</p>
+        <a href="contact.html" class="btn-primary">Let's Work Together <i class="fas fa-arrow-right"></i></a>
+    </div>
 </div>
 
+<!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-container">
-
-        <!-- Quick Links -->
-        <div class="footer-section">
-            <h4>Quick Links</h4>
+    <div class="footer__inner">
+        <div class="footer__brand">
+            <img src="./assets/my logo.png" alt="Dido logo">
+            <p>Building the web, one line at a time.</p>
+        </div>
+        <div class="footer__col">
+            <span class="footer__col-label">Quick Links</span>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </div>
-
-        <!-- Copyright -->
-        <div class="footer-section center">
-            <p>&copy; 2026 Dido Masengo. All Rights Reserved.</p>
+        <div class="footer__col">
+            <span class="footer__col-label">Connect</span>
+            <div class="footer__socials">
+                <a href="https://github.com/masengodido28-lgtm" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:masengodido28@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-
-        <!-- Social Links -->
-            <div class="footer-section">
-    <h3>Connect</h3>
-
-    <div class="social-icons">
-        <a href="https://github.com/masengodido28-lgtm" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="mailto:masengodido28@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
     </div>
-
-    </div>
+    <div class="footer__bottom">&copy; 2026 Dido Masengo. All Rights Reserved.</div>
 </footer>
 
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', scrollY > 40));
+const hamburger = document.getElementById('hamburger');
+const drawer    = document.getElementById('nav-drawer');
+hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); drawer.classList.toggle('open'); });
+
+const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 <script src="projects.js"></script>
+
 </body>
 </html>

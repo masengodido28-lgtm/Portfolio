@@ -1,55 +1,55 @@
-const buttons = document.querySelectorAll(".identity-btn");
+/* =====================================================
+   ABOUT.JS — identity card switcher
+===================================================== */
 
-const image = document.getElementById("identity-image");
-const title = document.getElementById("identity-title");
-const text = document.getElementById("identity-text");
+const tabs   = document.querySelectorAll('.identity__tab');
+const image  = document.getElementById('identity-image');
+const title  = document.getElementById('identity-title');
+const text   = document.getElementById('identity-text');
 
-buttons.forEach(function(button){
+const identities = {
+    developer: {
+        src:   './assets/dev img.png',
+        title: 'The Developer',
+        text:  'I enjoy building clean, meaningful digital experiences while constantly learning new technologies and improving my problem-solving skills.'
+    },
+    drummer: {
+        src:   './assets/drummer.jpg',
+        title: 'The Drummer',
+        text:  'Drumming has taught me discipline, patience, and consistency. Every practice session reminds me that growth comes through repetition.'
+    },
+    faith: {
+        src:   './assets/faith.jpg',
+        title: 'Faith',
+        text:  'My faith keeps me grounded. It reminds me to pursue excellence with humility and purpose in everything I do.'
+    },
+    poet: {
+        src:   './assets/poetry.png',
+        title: 'The Poet',
+        text:  'Poetry gives me a place to slow down, reflect, and express emotions. It shapes the creativity I bring into both design and development.'
+    }
+};
 
-    button.addEventListener("click", function(){
+tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
 
-        // Remove active class
-        buttons.forEach(function(btn){
-            btn.classList.remove("active");
-        });
+        const data = identities[tab.dataset.identity];
+        if (!data) return;
 
-        // Add active class
-        button.classList.add("active");
-
-        const identity = button.dataset.identity;
-
-        if(identity === "developer"){
-
-            image.src = "./assets/dev img.png";
-            title.textContent = "The Developer";
-            text.textContent = "I enjoy building clean, meaningful digital experiences while constantly learning new technologies and improving my problem-solving skills.";
-
-        }
-
-        else if(identity === "drummer"){
-
-            image.src = "./assets/drummer.jpg";
-            title.textContent = "The Drummer";
-            text.textContent = "Drumming has taught me discipline, patience and consistency. Every practice session reminds me that growth comes through repetition.";
-
-        }
-
-        else if(identity === "faith"){
-
-            image.src = "./assets/faith.jpg";
-            title.textContent = "Faith";
-            text.textContent = "My faith keeps me grounded. It reminds me to pursue excellence with humility and purpose in everything I do.";
-
-        }
-
-        else if(identity === "poet"){
-
-            image.src = "./assets/poetry.png";
-            title.textContent = "The Poet";
-            text.textContent = "Poetry gives me a place to slow down, reflect and express emotions. It shapes the creativity I bring into both design and development.";
-
-        }
-
+        // Fade out
+        image.style.opacity = '0';
+        setTimeout(function () {
+            image.src          = data.src;
+            title.textContent  = data.title;
+            text.textContent   = data.text;
+            image.style.opacity = '1';
+        }, 180);
     });
-
 });
+
+// Smooth image fade transition
+if (image) {
+    image.style.transition = 'opacity 0.18s ease';
+}

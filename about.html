@@ -3,323 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>About — Dido Masengo</title>
     <link rel="icon" type="image/png" href="./assets/favicon logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="theme-toggle.js" defer></script>
 </head>
 <body>
-    
-     
-<header class="navbar">
 
-  <img src="./assets/my logo.png" alt="logo" class="logo">
-
-  <nav>
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <img src="./assets/my logo.png" alt="Dido logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+        <button class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+            <i class="fas fa-sun icon-sun"></i>
+            <i class="fas fa-moon icon-moon" style="display:none"></i>
+        </button>
+        <a href="contact.html" class="hire-btn">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
-  </nav>
-
-</header>
+    <a href="contact.html" class="hire-btn">Hire Me</a>
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun icon-sun"></i>
+        <i class="fas fa-moon icon-moon" style="display:none"></i>
+    </button>
+</nav>
 
 <main>
-<!-- =========================================
-     ABOUT HERO
-========================================= -->
 
-<section class="about-hero">
+    <!-- PAGE HEADER -->
+    <div class="page-header container">
+        <span class="section-label">About Me</span>
+        <h1>Developer.<br>Creative.<br>Problem&nbsp;Solver.</h1>
+        <p>Get to know the person behind the code.</p>
+    </div>
 
-    <!-- LEFT SIDE -->
-    <div class="about-hero-content">
+    <div class="divider"></div>
 
-        <span class="about-label">
-            ABOUT ME
-        </span>
+    <!-- ABOUT HERO -->
+    <section class="about-hero section-pad">
+        <div class="container about-hero__inner">
 
-        <h3>
-            DEVELOPER. CREATIVE. PROBLEM SOLVER.
-        </h3>
+            <!-- Left: text -->
+            <div class="about-hero__content reveal">
+                <p class="about-body">
+                    My name is Dido. I am a 23 year old learning web development.
+                    I really enjoy it as it is challenging and solution based,
+                    which always gives me a chance to grow.
+                </p>
+                <p class="about-body">
+                    Besides learning full stack web development, I am a writer
+                    (I write poetry) and I am a drummer — two passions that keep
+                    me creative and disciplined outside of code.
+                </p>
+                <p class="about-body">
+                    I want to incorporate web development into my interests by
+                    building a drumming website that helps other drummers find
+                    content that promotes growth.
+                </p>
 
-        <p>
-            My name is Dido. I am a 23 year old learning web development.
-            I really enjoy it as it is challenging and solution based,
-            which always gives me a chance to grow.
-        </p>
+                <!-- Personality highlights -->
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-code-slash"></i>
+                        <div>
+                            <strong>Developer</strong>
+                            <small>Building clean, purposeful experiences.</small>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-music-note-beamed"></i>
+                        <div>
+                            <strong>Drummer</strong>
+                            <small>Finding rhythm through discipline.</small>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-pencil-square"></i>
+                        <div>
+                            <strong>Poet</strong>
+                            <small>Turning thoughts into words.</small>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-heart-fill"></i>
+                        <div>
+                            <strong>Faith</strong>
+                            <small>Grounded by purpose and grace.</small>
+                        </div>
+                    </div>
+                </div>
 
-        <p>
-            Besides learning full stack web development, I am a writer
-            (I write poetry) and I am a drummer. These are two of my
-            personal interests outside of coding.
-        </p>
+                <a href="contact.html" class="btn-primary" style="margin-top:32px; align-self:flex-start;">
+                    Let's Connect <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
 
-        <p>
-            I want to incorporate web development into my interests,
-            by using my skills to create drumming content and put them
-            on my drumming website. That will help other drummers find
-            content that is helpful and that promotes growth.
-        </p>
+            <!-- Right: image -->
+            <div class="about-hero__img reveal">
+                <img src="./assets/about img2.jpg" alt="Dido Masengo">
+            </div>
 
+        </div>
+    </section>
 
-        <!-- PERSONALITY HIGHLIGHTS -->
+    <div class="divider"></div>
 
-            <div class="personality-highlights">
+    <!-- IDENTITY SECTION -->
+    <section class="identity section-pad">
+        <div class="container identity__inner">
+            <div class="identity__intro reveal">
+                <span class="section-label">Beyond the Screen</span>
+                <h2 class="section-title">The Person Behind the Code</h2>
+                <p class="section-sub">
+                    Every line I write is shaped by experiences beyond my screen.
+                    Here are the four passions that define me.
+                </p>
+            </div>
 
-        <div class="personality-item">
-            <i class="bi bi-code-slash"></i>
-            <div>
-                <strong>DEVELOPER</strong>
-                <small>Building clean, purposeful experiences.</small>
+            <div class="identity__card card reveal">
+                <img id="identity-image" src="./assets/dev img.png" alt="Identity">
+
+                <div class="identity__tabs">
+                    <button class="identity__tab active" data-identity="developer" aria-label="Developer">
+                        <i class="bi bi-laptop"></i>
+                    </button>
+                    <button class="identity__tab" data-identity="drummer" aria-label="Drummer">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </button>
+                    <button class="identity__tab" data-identity="faith" aria-label="Faith">
+                        <i class="bi bi-heart-fill"></i>
+                    </button>
+                    <button class="identity__tab" data-identity="poet" aria-label="Poet">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                </div>
+
+                <h3 id="identity-title">The Developer</h3>
+                <p id="identity-text">
+                    I enjoy building clean, meaningful digital experiences while constantly
+                    learning new technologies and improving my problem-solving skills.
+                </p>
             </div>
         </div>
+    </section>
 
-        <div class="personality-item">
-            <i class="bi bi-music-note-beamed"></i>
-            <div>
-                <strong>DRUMMER</strong>
-                <small>Finding rhythm through discipline.</small>
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section class="skills section-pad">
+        <div class="container">
+            <span class="section-label">Skills</span>
+            <h2 class="section-title">My Skills</h2>
+
+            <div class="skills__group">
+                <h3 class="skills__group-label">Frontend</h3>
+                <div class="skills__grid">
+                    <div class="skill-card card reveal"><i class="bi bi-filetype-html"></i><span>HTML</span></div>
+                    <div class="skill-card card reveal"><i class="bi bi-filetype-css"></i><span>CSS</span></div>
+                    <div class="skill-card card reveal"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+                    <div class="skill-card card reveal"><i class="bi bi-bootstrap-fill"></i><span>Bootstrap</span></div>
+                </div>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-label">Tools</h3>
+                <div class="skills__grid">
+                    <div class="skill-card card reveal"><i class="bi bi-git"></i><span>Git</span></div>
+                    <div class="skill-card card reveal"><i class="bi bi-github"></i><span>GitHub</span></div>
+                    <div class="skill-card card reveal"><i class="bi bi-code-slash"></i><span>VS Code</span></div>
+                    <div class="skill-card card reveal"><i class="bi bi-globe"></i><span>Netlify</span></div>
+                </div>
+            </div>
+
+            <div class="skills__group">
+                <h3 class="skills__group-label">Currently Learning</h3>
+                <div class="skills__grid">
+                    <div class="skill-card card skill-card--learning reveal"><i class="bi bi-code-square"></i><span>React</span></div>
+                    <div class="skill-card card skill-card--learning reveal"><i class="bi bi-terminal"></i><span>Python</span></div>
+                    <div class="skill-card card skill-card--learning reveal"><i class="bi bi-plug"></i><span>REST APIs</span></div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="personality-item">
-            <i class="bi bi-pencil-square"></i>
-            <div>
-                <strong>POET</strong>
-                <small>Turning thoughts into words.</small>
-            </div>
-        </div>
-
-        <div class="personality-item">
-            <i class="bi bi-heart-fill"></i>
-            <div>
-                <strong>FAITH</strong>
-                <small>Grounded by purpose and grace.</small>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- CTA -->
-  <a href="contact.html" class="about-contact-link">
-    Let's Connect <i class="bi bi-arrow-right"></i>
-</a>
-
-</div>
-
-
-    <!-- RIGHT SIDE -->
-
-    <div class="about-hero-image">
-
-        <img
-            src="./assets/about img2.jpg"
-            alt="Dido Masengo">
-    </div>
-
-</section>
-
-
-<div class="section-divider"></div>
-
-</section>
-<section class="identity-section">
-
-    <h2>Meet the Person Behind the Code</h2>
-
-    <p class="identity-intro">
-        Every line of code I write is influenced by experiences beyond my screen.
-        Here are the four passions that continue to shape the developer I'm becoming.
-    </p>
-
-    <div class="identity-card">
-
-        <!-- Image -->
-        <img id="identity-image"
-             src="./assets/dev img.png"
-             alt="Developer">
-
-        <!-- Buttons -->
-        <div class="identity-tabs">
-
-            <button class="identity-btn active" data-identity="developer">
-                <i class="bi bi-laptop"></i>
-            </button>
-
-            <button class="identity-btn" data-identity="drummer">
-                <i class="bi bi-music-note-beamed"></i>
-            </button>
-
-            <button class="identity-btn" data-identity="faith">
-                <i class="bi bi-heart-fill"></i>
-            </button>
-
-            <button class="identity-btn" data-identity="poet">
-                <i class="bi bi-pencil-square"></i>
-            </button>
-
-        </div>
-
-        <!-- Title -->
-        <h3 id="identity-title">The Developer</h3>
-
-        <!-- Description -->
-        <p id="identity-text">
-            I enjoy building clean, meaningful digital experiences while constantly
-            learning new technologies and improving my problem-solving skills.
-        </p>
-
-    </div>
-
-</section>
-
-
-<div class="section-divider"></div>
-
-<!-- Skills Section -->
-<section id="skills">
-
-<section id="skills" class="skills">
-
-    <h2>My Skills</h2>
-
-    <!-- Frontend -->
-    <h3 class="skills-heading">Frontend</h3>
-
-    <div class="skills-container">
-
-        <div class="skill">
-            <i class="bi bi-filetype-html"></i>
-            <p>HTML</p>
-        </div>
-
-        <div class="skill">
-            <i class="bi bi-filetype-css"></i>
-            <p>CSS</p>
-        </div>
-
-        <div class="skill">
-            <i class="bi bi-filetype-js"></i>
-            <p>JavaScript</p>
-        </div>
-
-        <div class="skill">
-            <i class="bi bi-bootstrap-fill"></i>
-            <p>Bootstrap</p>
-        </div>
-
-    </div>
-
-    <!-- Tools -->
-    <h3 class="skills-heading">Tools</h3>
-
-    <div class="skills-container">
-
-        <div class="skill">
-            <i class="bi bi-git"></i>
-            <p>Git</p>
-        </div>
-
-        <div class="skill">
-            <i class="bi bi-github"></i>
-            <p>GitHub</p>
-        </div>
-
-        <div class="skill">
-            <i class="bi bi-code-slash"></i>
-            <p>VS Code</p>
-        </div>
-
-        <div class="skill">
-            <i class="bi bi-globe"></i>
-            <p>Netlify</p>
-        </div>
-
-    </div>
-
-    <!-- Currently Learning -->
-    <h3 class="skills-heading">Currently Learning</h3>
-
-    <div class="skills-container">
-
-        <div class="skill learning">
-            <i class="bi bi-code-square"></i> 
-            <p>React</p>
-        </div>
-
-        <div class="skill learning">
-            <i class="bi bi-terminal"></i> 
-            <p>Python</p>
-        </div>
-
-        <div class="skill learning">
-            <i class="bi bi-plug"></i> 
-            <p>REST APIs</p>
-        </div>
-
-    </div>
-
-</section>
 </main>
 
-<!-- Call To Action -->
-<section class="about-cta">
+<!-- CTA -->
+<div class="cta-banner reveal">
+    <div class="cta-banner__orb"></div>
+    <div class="cta-banner__inner">
+        <h2>Let's Build Something Meaningful</h2>
+        <p>Have a project, idea, or opportunity you'd like to discuss? I'd love to hear from you.</p>
+        <a href="contact.html" class="btn-primary">Let's Talk <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
 
-    <h2>Let's Build Something Meaningful</h2>
-
-<p>
-    Have a project, idea, or opportunity you'd like to talk about?
-    I'd love to hear from you.
-</p>
-
-<a href="contact.html" class="bottom-contact-button">
-    Let's Talk <i class="bi bi-arrow-right"></i>
-</a>
-
-</section>
-  
-
+<!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-container">
-
-        <!-- Quick Links -->
-        <div class="footer-section">
-            <h4>Quick Links</h4>
+    <div class="footer__inner">
+        <div class="footer__brand">
+            <img src="./assets/my logo.png" alt="Dido logo">
+            <p>Building the web, one line at a time.</p>
+        </div>
+        <div class="footer__col">
+            <span class="footer__col-label">Quick Links</span>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </div>
-
-        <!-- Copyright -->
-        <div class="footer-section center">
-            <p>&copy; 2026 Dido Masengo. All Rights Reserved.</p>
+        <div class="footer__col">
+            <span class="footer__col-label">Connect</span>
+            <div class="footer__socials">
+                <a href="https://github.com/masengodido28-lgtm" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:masengodido28@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-
-        <!-- Social Links -->
-           <div class="footer-section">
-    <h3>Connect</h3>
-
-    <div class="social-icons">
-        <a href="https://github.com/masengodido28-lgtm" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="mailto:masengodido28@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
     </div>
-
-    </div>
+    <div class="footer__bottom">&copy; 2026 Dido Masengo. All Rights Reserved.</div>
 </footer>
 
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', scrollY > 40));
+const hamburger = document.getElementById('hamburger');
+const drawer    = document.getElementById('nav-drawer');
+hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); drawer.classList.toggle('open'); });
+
+const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 <script src="about.js"></script>
+
 </body>
 </html>
-
