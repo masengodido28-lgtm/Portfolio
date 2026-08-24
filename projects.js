@@ -86,6 +86,7 @@ const closeBtn = document.getElementById("modal-close");
 function openModal(projectKey) {
   const study = caseStudies[projectKey];
   if (!study) return;
+  
 
   modalTitle.textContent = study.title;
   modalBody.innerHTML = study.content.map(function (paragraph) {
