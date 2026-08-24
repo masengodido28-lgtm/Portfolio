@@ -3,137 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Dido's Portfolio</title>
+    <title>Dido Masengo — Full Stack Developer</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="icon" type="image/png" href="./assets/favicon logo.png">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="home-page">
 
-<header class="navbar">
+<!-- ===================== NAVBAR ===================== -->
+<header class="hn-navbar" id="hn-navbar">
+    <a href="index.html" class="hn-logo">
+        <img src="./assets/my logo.png" alt="Dido logo">
+    </a>
 
-    <img src="./assets/my logo.png" alt="Dido logo" class="logo">
+    <nav class="hn-nav">
+        <a href="index.html" class="hn-nav-link active">Home</a>
+        <a href="about.html" class="hn-nav-link">About</a>
+        <a href="projects.html" class="hn-nav-link">Projects</a>
+        <a href="contact.html" class="hn-nav-link">Contact</a>
+    </nav>
 
-    <nav>
+    <a href="contact.html" class="hn-hire-btn">Hire Me</a>
+
+    <button class="hn-menu-btn" id="hn-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <!-- Mobile drawer -->
+    <div class="hn-mobile-nav" id="hn-mobile-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
-    </nav>
-
+        <a href="contact.html" class="hn-hire-btn" style="margin-top:10px;">Hire Me</a>
+    </div>
 </header>
 
 
-<!-- HERO SECTION -->
-<section class="hero">
+<!-- ===================== HERO ===================== -->
+<section class="hn-hero">
 
-    <!-- Background decoration -->
-    <div class="hero-grid"></div>
+    <!-- Noise/grid overlay -->
+    <div class="hn-hero-overlay"></div>
 
-    <!-- Image -->
-    <div class="hero-image">
-        <div class="image-glow"></div>
-        <img src="./assets/home.jpg" alt="Dido Masengo">
-    </div>
+    <!-- Glowing orbs -->
+    <div class="hn-orb hn-orb-1"></div>
+    <div class="hn-orb hn-orb-2"></div>
 
-    <!-- Text -->
-    <div class="hero-text">
+    <div class="hn-hero-inner">
 
-        <p class="hero-small-text">DEV</p>
+        <!-- Left: text -->
+        <div class="hn-hero-text">
+            <div class="hn-badge">
+                <span class="hn-badge-dot"></span>
+                Available for freelance work
+            </div>
 
-        <h1>
-            DIDO<br>
-            <span>MASENGO</span>
-        </h1>
+            <h1 class="hn-hero-name">
+                <span class="hn-line">Hi, I'm</span>
+                <span class="hn-line hn-name-accent">Dido Masengo</span>
+            </h1>
 
-        <h2>
-            FULL STACK WEB<br>
-            DEVELOPER
-        </h2>
+            <div class="hn-typewriter-wrap">
+                <span class="hn-tw-static">I build&nbsp;</span>
+                <span class="hn-tw-dynamic" id="hn-tw"></span>
+                <span class="hn-tw-cursor">|</span>
+            </div>
 
-        <p class="hero-description">
-            I create clean, purposeful digital experiences
-            through code, creativity and problem solving.
-        </p>
+            <p class="hn-hero-desc">
+                Full Stack Developer crafting clean, purposeful digital
+                experiences through code, creativity, and problem-solving.
+            </p>
 
-        <div class="hero-buttons">
-            <a href="contact.html" class="hero-btn">
-                Get in Touch
-            </a>
+            <div class="hn-hero-actions">
+                <a href="projects.html" class="hn-btn-primary">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="hn-btn-ghost">
+                    Let's Talk
+                </a>
+            </div>
 
-            <a href="projects.html" class="hero-link">
-                View My Work<span>↗</span>
-            </a>
+            <!-- Social strip -->
+            <div class="hn-social-strip">
+                <a href="https://github.com/masengodido28-lgtm" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:masengodido28@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <span class="hn-social-line"></span>
+            </div>
         </div>
 
+        <!-- Right: photo card -->
+        <div class="hn-hero-card">
+            <div class="hn-card-glow"></div>
+            <img src="./assets/home.jpg" alt="Dido Masengo" class="hn-photo">
+
+            <!-- Floating badge -->
+            <div class="hn-float-badge hn-fb-top">
+                <i class="fas fa-code"></i>
+                <span>Full Stack</span>
+            </div>
+            <div class="hn-float-badge hn-fb-bottom">
+                <i class="fas fa-star" style="color:#f5c518;"></i>
+                <span>Open to work</span>
+            </div>
+        </div>
     </div>
 
+    <!-- Stats bar -->
+    <div class="hn-stats-bar">
+        <div class="hn-stat">
+            <strong>3+</strong>
+            <span>Years coding</span>
+        </div>
+        <div class="hn-stat-divider"></div>
+        <div class="hn-stat">
+            <strong>10+</strong>
+            <span>Projects built</span>
+        </div>
+        <div class="hn-stat-divider"></div>
+        <div class="hn-stat">
+            <strong>5+</strong>
+            <span>Technologies</span>
+        </div>
+        <div class="hn-stat-divider"></div>
+        <div class="hn-stat">
+            <strong>100%</strong>
+            <span>Passion driven</span>
+        </div>
+    </div>
 </section>
 
 
-<footer class="footer">
+<!-- ===================== SERVICES ===================== -->
+<section class="hn-services">
+    <div class="hn-section-label">What I Do</div>
+    <h2 class="hn-section-title">Services I Offer</h2>
+    <p class="hn-section-sub">From concept to deployment — I cover the full product lifecycle.</p>
 
-    <div class="footer-container">
+    <div class="hn-services-grid">
 
-        <!-- Quick Links -->
-        <div class="footer-section">
+        <div class="hn-service-card">
+            <div class="hn-service-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Pixel-perfect, responsive UIs built with HTML, CSS, and JavaScript that look great on every device.</p>
+        </div>
 
-            <h4>Quick Links</h4>
+        <div class="hn-service-card hn-service-featured">
+            <div class="hn-service-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>Robust APIs and server-side logic using Node.js and modern frameworks with clean architecture.</p>
+            <span class="hn-service-tag">Most Requested</span>
+        </div>
 
+        <div class="hn-service-card">
+            <div class="hn-service-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Seamless experiences across all screen sizes — mobile-first approach for maximum reach.</p>
+        </div>
+
+        <div class="hn-service-card">
+            <div class="hn-service-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Clean, intuitive interfaces with thoughtful user journeys and modern design principles.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ===================== TECH STACK ===================== -->
+<section class="hn-stack">
+    <div class="hn-section-label">Tech Stack</div>
+    <h2 class="hn-section-title">Tools I Work With</h2>
+
+    <div class="hn-stack-grid">
+        <div class="hn-stack-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="hn-stack-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="hn-stack-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="hn-stack-item"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="hn-stack-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="hn-stack-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="hn-stack-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="hn-stack-item"><i class="fas fa-database"></i><span>SQL</span></div>
+    </div>
+</section>
+
+
+<!-- ===================== CTA BANNER ===================== -->
+<section class="hn-cta-banner">
+    <div class="hn-cta-orb"></div>
+    <div class="hn-cta-inner">
+        <h2>Ready to start a project?</h2>
+        <p>I'm currently available for freelance work. Let's build something great together.</p>
+        <a href="contact.html" class="hn-btn-primary hn-cta-btn">
+            Get In Touch <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="hn-footer">
+    <div class="hn-footer-inner">
+
+        <div class="hn-footer-brand">
+            <img src="./assets/my logo.png" alt="Dido logo" class="hn-footer-logo">
+            <p>Building the web, one line at a time.</p>
+        </div>
+
+        <div class="hn-footer-links">
+            <span>Quick Links</span>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
-
         </div>
 
-
-        <!-- Copyright -->
-        <div class="footer-section center">
-
-            <p>
-                &copy; 2026 Dido Masengo. All Rights Reserved.
-            </p>
-
-        </div>
-
-
-        <!-- Social Links -->
-        <div class="footer-section">
-
-            <h3>Connect</h3>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/masengodido28-lgtm"
-                   target="_blank"
-                   aria-label="GitHub">
+        <div class="hn-footer-connect">
+            <span>Connect</span>
+            <div class="hn-footer-socials">
+                <a href="https://github.com/masengodido28-lgtm" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-
-                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b"
-                   target="_blank"
-                   aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/dido-masengo-86b31629b" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-
-                <a href="mailto:masengodido28@gmail.com"
-                   aria-label="Email">
+                <a href="mailto:masengodido28@gmail.com" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-
             </div>
-
         </div>
 
     </div>
 
+    <div class="hn-footer-bottom">
+        <p>&copy; 2026 Dido Masengo. All Rights Reserved.</p>
+    </div>
 </footer>
+
+
+<script>
+// ---- Navbar scroll effect ----
+const navbar = document.getElementById('hn-navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('hn-scrolled', window.scrollY > 40);
+});
+
+// ---- Mobile menu ----
+const menuBtn = document.getElementById('hn-menu-btn');
+const mobileNav = document.getElementById('hn-mobile-nav');
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+});
+
+// ---- Typewriter ----
+const phrases = [
+    'fast websites.',
+    'clean UIs.',
+    'robust APIs.',
+    'great products.',
+];
+let pi = 0, ci = 0, deleting = false;
+const twEl = document.getElementById('hn-tw');
+
+function type() {
+    const phrase = phrases[pi];
+    if (!deleting) {
+        twEl.textContent = phrase.slice(0, ++ci);
+        if (ci === phrase.length) {
+            deleting = true;
+            setTimeout(type, 1800);
+            return;
+        }
+    } else {
+        twEl.textContent = phrase.slice(0, --ci);
+        if (ci === 0) {
+            deleting = false;
+            pi = (pi + 1) % phrases.length;
+        }
+    }
+    setTimeout(type, deleting ? 60 : 100);
+}
+type();
+
+// ---- Scroll reveal ----
+const revealEls = document.querySelectorAll(
+    '.hn-service-card, .hn-stack-item, .hn-stat'
+);
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('hn-visible');
+            observer.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.15 });
+revealEls.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
