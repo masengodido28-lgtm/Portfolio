@@ -42,6 +42,9 @@
     --radius-lg:       22px;
     --radius-pill:     999px;
     --transition:      0.28s ease;
+
+    /* Background mesh */
+    --mesh-opacity:    0.9;
 }
 
 /* ---- LIGHT MODE ---- */
@@ -69,6 +72,9 @@
     --shadow-md:       0 8px 28px rgba(0, 0, 0, 0.1);
     --shadow-lg:       0 20px 60px rgba(0, 0, 0, 0.12);
     --shadow-accent:   0 8px 24px rgba(0, 180, 50, 0.25);
+
+    /* Background mesh */
+    --mesh-opacity:    0.65;
 }
 
 /* ---- Smooth mode transitions ---- */
