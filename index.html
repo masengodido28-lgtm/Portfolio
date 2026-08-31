@@ -40,14 +40,27 @@
         </button>
     </div>
 </header>
-
 <!-- Mobile drawer -->
 <nav class="nav-drawer" id="nav-drawer">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+
+    <!-- Projects Dropdown -->
+    <div class="mobile-dropdown">
+        <button class="mobile-dropdown-toggle" id="projects-toggle">
+            Projects
+            <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <div class="mobile-dropdown-menu" id="projects-menu">
+            <a href="active-projects.html">Active Projects</a>
+            <a href="project-archive.html">Project Archive</a>
+        </div>
+    </div>
+
     <a href="contact.html">Contact</a>
     <a href="contact.html" class="hire-btn">Hire Me</a>
+
     <button class="theme-toggle" aria-label="Toggle theme">
         <i class="fas fa-sun icon-sun"></i>
         <i class="fas fa-moon icon-moon" style="display:none"></i>
@@ -108,7 +121,7 @@
         <!-- Photo card -->
         <div class="hero__card">
             <div class="hero__card-glow"></div>
-            <img src="./assets/home.jpg" alt="Dido Masengo" class="hero__photo">
+            <img src="./assets/home img2.jfif" alt="Dido Masengo" class="hero__photo">
             <div class="hero__float hero__float--top">
                 <i class="fas fa-code"></i><span>Full Stack</span>
             </div>

@@ -534,3 +534,49 @@ a   { color: inherit; text-decoration: none; }
     .footer__inner { flex-direction: column; }
     .footer__col { align-items: flex-start; }
 }
+
+/* Mobile Projects Dropdown */
+.mobile-dropdown {
+    width: 100%;
+}
+
+.mobile-dropdown-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--white);
+    font: inherit;
+    text-align: left;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile-dropdown-toggle i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown-menu {
+    display: none;
+    padding-left: 20px;
+}
+
+.mobile-dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--grey);
+    text-decoration: none;
+}
+
+/* Open dropdown */
+.mobile-dropdown.active .mobile-dropdown-menu {
+    display: block;
+}
+
+/* Rotate arrow */
+.mobile-dropdown.active .mobile-dropdown-toggle i {
+    transform: rotate(180deg);
+}
