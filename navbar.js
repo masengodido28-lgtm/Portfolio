@@ -1,4 +1,7 @@
-// ===================== NAVBAR =====================
+/* =====================================================
+   NAVBAR.JS
+   Handles navbar, mobile menu, typewriter and scroll reveal
+===================================================== */
 
 // Navbar scroll
 const navbar = document.getElementById('navbar');
@@ -10,8 +13,7 @@ if (navbar) {
 }
 
 
-// ===================== HAMBURGER =====================
-
+// Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const drawer = document.getElementById('nav-drawer');
 
@@ -23,20 +25,7 @@ if (hamburger && drawer) {
 }
 
 
-// ===================== PROJECTS DROPDOWN =====================
-
-const projectsToggle = document.getElementById('projects-toggle');
-const projectsDropdown = document.querySelector('.mobile-dropdown');
-
-if (projectsToggle && projectsDropdown) {
-    projectsToggle.addEventListener('click', () => {
-        projectsDropdown.classList.toggle('active');
-    });
-}
-
-
-// ===================== TYPEWRITER =====================
-
+// Typewriter
 const twEl = document.getElementById('tw-word');
 
 if (twEl) {
@@ -51,14 +40,14 @@ if (twEl) {
     let ci = 0;
     let del = false;
 
-    (function type() {
-        const w = words[wi];
+    function type() {
+        const word = words[wi];
 
         twEl.textContent = del
-            ? w.slice(0, --ci)
-            : w.slice(0, ++ci);
+            ? word.slice(0, --ci)
+            : word.slice(0, ++ci);
 
-        if (!del && ci === w.length) {
+        if (!del && ci === word.length) {
             del = true;
             setTimeout(type, 1800);
             return;
@@ -70,12 +59,13 @@ if (twEl) {
         }
 
         setTimeout(type, del ? 55 : 95);
-    })();
+    }
+
+    type();
 }
 
 
-// ===================== SCROLL REVEAL =====================
-
+// Scroll reveal
 const io = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -83,6 +73,10 @@ const io = new IntersectionObserver(entries => {
             io.unobserve(entry.target);
         }
     });
-}, { threshold: 0.12 });
+}, {
+    threshold: 0.12
+});
 
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+document.querySelectorAll('.reveal').forEach(element => {
+    io.observe(element);
+});
