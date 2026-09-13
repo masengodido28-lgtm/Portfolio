@@ -1,0 +1,33 @@
+<svg width="1000" height="650" viewBox="0 0 1000 650" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="screenStroke" x1="190" y1="120" x2="860" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F3D0" stop-opacity="0.6"/>
+      <stop offset="0.35" stop-color="#00C94A" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#00C94A" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="baseFill" x1="240" y1="500" x2="760" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F3D0" stop-opacity="0.18"/>
+      <stop offset="0.4" stop-color="#00C94A" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#00C94A" stop-opacity="0.22"/>
+    </linearGradient>
+    <radialGradient id="screenGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(500 270) rotate(90) scale(260 360)">
+      <stop stop-color="#9AE6B4" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#9AE6B4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="500" cy="310" rx="310" ry="200" fill="url(#screenGlow)"/>
+
+  <g opacity="0.9">
+    <path d="M170 200C170 163.549 199.549 134 236 134H764C800.451 134 830 163.549 830 200V355C830 391.451 800.451 421 764 421H236C199.549 421 170 391.451 170 355V200Z" stroke="url(#screenStroke)" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M118 470H882L842 525C824.393 548.448 799.713 565 772.489 573.221L673.105 603.722C652.585 610.118 630.949 613.5 609.269 613.5H390.731C369.051 613.5 347.415 610.118 326.895 603.722L227.511 573.221C200.287 565 175.607 548.448 158 525L118 470Z" fill="url(#baseFill)" stroke="url(#screenStroke)" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M260 186H740V376H260V186Z" stroke="url(#screenStroke)" stroke-width="4" opacity="0.8"/>
+    <path d="M292 220H708" stroke="url(#screenStroke)" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+    <path d="M292 250H658" stroke="url(#screenStroke)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M292 280H620" stroke="url(#screenStroke)" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <path d="M292 310H690" stroke="url(#screenStroke)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M292 340H560" stroke="url(#screenStroke)" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="740" cy="335" r="12" stroke="url(#screenStroke)" stroke-width="3" opacity="0.8"/>
+    <path d="M220 470H780" stroke="url(#screenStroke)" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  </g>
+</svg>
