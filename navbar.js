@@ -30,10 +30,10 @@ const twEl = document.getElementById('tw-word');
 
 if (twEl) {
     const words = [
-        'fast websites.',
-        'clean UIs.',
-        'robust APIs.',
-        'great products.'
+        "websites",
+        "responsive UIs",
+        "React applications",
+        "full-stack apps"
     ];
 
     let wi = 0;
