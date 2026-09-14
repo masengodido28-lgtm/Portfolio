@@ -35,10 +35,12 @@
 .project-card__thumb--1 { background-image: url("./assets/netflix ss.png"); }
 .project-card__thumb--2 { background-image: url("./assets/Screenshot (9).png"); }
 .project-card__thumb--3 { background-image: url("./assets/to-do ss.png"); }
-.project-card__thumb--4 { background-image: url("./assets/Screenshot (62).png"); }
+.project-card__thumb--4 { background-image: url("./assets/drumweb.png"); }
 .project-card__thumb--5 { background-image: url("./assets/youtube img.png"); }
 .project-card__thumb--6 { background-image: url("./assets/bootstrap port.png"); }
 .project-card__thumb--7 { background-image: url("./assets/ihub prototype.png"); }
+.project-card__thumb--8 { background-image: url("./assets/urban\ threads.png"); }
+.project-card__thumb--9 { background-image: url("./assets/airbnb.png"); }
 
 /* Body */
 .project-card__body {
